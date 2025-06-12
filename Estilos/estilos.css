@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(225, 188, 241)
+}
+
+h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', 'Times, serif', 'Arial Narrow', 'Arial, sans-serif';
+    color: rgb(0, 0, 0)
+}
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    color: black;
+    background-color:  rgb(146, 62, 139);
+}
+
+p{
+    font-size: 20px;
+     font-family: Georgia, 'Times New Roman', Times, serif, monospace; 
+    color: rgb(0, 0, 0);
+}
+
+div{
+    text-align: center
+}
+
+.div1{
+    width: 300px;
+    border: 6px solid rgb(146, 62, 139);
+    color: black;
+    background-color: rgb(216, 115, 174);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #000000ec;
+    padding: 10px;
+    margin: 10px;
+
+}
+a{
+    color: blue;
+    font-size: 20px;
+}
+
+a:hover{
+    color: white;
+}
