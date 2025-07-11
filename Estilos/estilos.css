@@ -1,52 +1,174 @@
+/*------------BODY------------*/
 body {
-    background-color: #e1bcf1;
-    background-image: url("/imagens/logoSerra.png");
-    background-attachment: fixed;
-    background-position: right top;
-    background-repeat: no-repeat;
-    background-size: 80px;
-    
+    background-color: rgb(146, 62, 139);
 }
 
-h1{
+
+/*------------HEADER------------*/
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: black;
+    padding: 0 20px;
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav > * {
+    flex-grow: 1;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', 'Times, serif', 'Arial Narrow', 'Arial, sans-serif';
-    color: rgb(0, 0, 0)
 }
 
-h2{
-    font-family: Georgia, 'Times New Roman', Times, serif ;
-    color: black;
-    background-color:  #923e8b;
-}
-
-p{
-    font-size: 20px;
-     font-family: Georgia, 'Times New Roman', Times, serif, monospace; 
-    color: rgb(0, 0, 0);
-}
-
-div{
-    text-align: center
-}
-
-.div1{
-    width: 300px;
-    border: 6px solid rgb(146, 62, 139);
-    color: black;
-    background-image: url("/imagens/watercolor.webp");
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px #000000ec;
-    padding: 10px;
-    margin: 10px;
-
-
-}
-a{
-    color: blue;
-    font-size: 20px;
-}
-
-a:hover{
+header h1 {
     color: white;
+    font-family: cursive;
+    font-size: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+header img {
+    height: 50px;
+}
+
+
+/*------------LAYOUT------------*/
+.layout {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+
+/*------------ASIDE------------*/
+aside {
+    border: 1px solid black;
+    width: 20%;
+    background-color: rgb(188, 209, 248);
+}
+
+.nav-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-aside a {
+    display: block;
+    padding: 10px 20px;
+    background-color: rgb(146, 62, 139);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.nav-aside a:hover {
+    transform: scale(1.1);
+}
+
+
+/*------------MAIN------------*/
+main {
+    flex: 1;
+    background-color: #e1bcf1;
+    border: 1px solid black;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+
+/*------------SECTION1------------*/
+#section1 img {
+    display: block;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    border: 4px solid rgb(146, 62, 139);
+}
+
+#section1 div {
+    margin: 10px auto;
+    height: 50%;
+    width: 50%;
+    border: 4px solid rgb(146, 62, 139);
+    background-image: url(/imagens/watercolor.webp);
+    text-align: justify;
+}
+
+#section1 h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+#section1 p {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+/*------------SECTION2------------*/
+#section2 {
+    text-align: center;
+}
+
+#section2 h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+#section2 img {
+    display: block;
+    margin: auto;
+    width: auto;
+    border: 4px solid rgb(146, 62, 139);
+    height: 400;
+    width: 400;
+}
+
+
+/*------------SECTION3------------*/
+#section3 div {
+    margin: 10px auto;
+    height: 50%;
+    width: 50%;
+    border: 4px solid rgb(146, 62, 139);
+    background-image: url(/imagens/watercolor.webp);
+    text-align: justify;
+}
+
+#section3 h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+#section3 p {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+/*------------FOOTER------------*/
+footer {
+    background-color: rgb(195, 194, 194);
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 4px;
 }

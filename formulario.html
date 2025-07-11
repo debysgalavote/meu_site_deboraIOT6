@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Debora Galavote Moura">
+
+        <title>Formulario_Debora</title>
+        <link rel="icon" href="imagens/logoSerra.png" type="image/png">
+    </head>
+    <body>
+        <style>
+            fieldset {
+                background-color: #eeeeee;
+                width: 500px;
+            }
+
+            legend {
+                background-color: gray;
+                color: white;
+                padding: 5px 10px;
+            }
+
+            input {
+                margin: 5px;
+            }
+
+            .caixa1 {
+                display: flex;
+                align-items: center;
+            }
+
+            .caixa2 {
+                display: flex;
+                align-items: center;
+                margin-left: 100px;
+            }
+            
+            .div1 {
+                width: 100px;
+            }
+            
+            .div2 {
+                width: 95px;
+            }
+        </style>
+
+        <form>
+            <fieldset>
+                <legend>MANUTENÇÃO DE USUÁRIO DO SISTEMA INTERNO</legend>
+                <div class="caixa1">
+                    <div class="div2"><label for="login">Login</label></div>
+                    <input type="text" id="login" name="login">
+                </div>
+
+                <div class="caixa1">
+                    <div class="div2"><label for="senha">Senha</label></div>
+                    <input type="password" id="senha" name="senha">
+                </div>
+                
+                <div class="caixa1">
+                    <div class="div1"><label for="status">Status</label></div>
+                    <select id="status" name="status">
+                        <option value="ativo">Ativo</option>
+                        <option value="inativo">Inativo</option>
+                    </select>
+                </div>
+
+                <div class="caixa1">
+                    <div class="div1"><label>Tipo</label></div>
+                    <input type="radio" id="tecnico" name="tipo" value="Tecnico">
+                    <label for="tecnico">Técnico</label>
+                    <input type="radio" id="professor" name="tipo" value="Professor">
+                    <label for="professor">Professor</label>
+                    <input type="radio" id="aluno" name="tipo" value="Aluno">
+                    <label for="aluno">Aluno</label>
+                </div>
+
+                <div class="caixa1">
+                    <div class="div2"><label for="data">Data da Criação</label></div>
+                    <input type="date" id="data" name="data">
+                </div>
+
+                <div class="caixa1">
+                    <div class="div1"><label>Perfil</label></div>
+                    <input type="radio" id="convidado" name="perfil" value="Convidado">
+                    <label for="convidado">Convidado</label>
+                    <input type="radio" id="administrador" name="perfil" value="Administrador">
+                    <label for="administrador">Administrador</label>
+                </div>
+
+                <div class="caixa1">
+                    <div class="div1"><label for="comentarios">Comentários</label></div>
+                    <textarea id="comentarios" name="comentarios" rows="5" cols="30"></textarea>
+                </div>
+
+                <div class="caixa1">
+                    <div class="div1"><label>Tipo</label></div>
+                    <input type="checkbox" id="compras" name="compras" value="Compras">
+                    <label for="compras">Compras</label>
+                    <input type="checkbox" id="biblioteca" name="biblioteca" value="Biblioteca">
+                    <label for="biblioteca">Biblioteca</label>
+                    <input type="checkbox" id="academico" name="academico" value="Acadêmico">
+                    <label for="academico">Acadêmico</label>
+                </div>
+                <div class="caixa2">
+                    <input type="checkbox" id="documentacao" name="documentacao" value="Documentação">
+                    <label for="documentacao">Documentação</label>
+                    <input type="checkbox" id="recursos" name="recursos" value="recursoshumanos">
+                    <label for="recursos">Recursos Humanos</label>
+                </div>
+
+                <input type="submit" value="Cadastro">
+                <input type="submit" value="Excluir">
+            </fieldset>
+        </form>
+    </body>
+</html>
